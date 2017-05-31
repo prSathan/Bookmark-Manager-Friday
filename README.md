@@ -6,7 +6,7 @@
 ```
 As a Makers Student
 So that I can quickly go to websites I regularly visit
-I want to see a list of links from the database
+I want to see a list of links on the homepage
 ```
 
 ### User Story 2
