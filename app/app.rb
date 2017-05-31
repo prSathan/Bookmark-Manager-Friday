@@ -8,7 +8,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/links' do
-    erb(:links)
+    @links = Link.all
+    erb(':links/index')
   end
-  
+
 end
