@@ -4,7 +4,7 @@ feature 'Viewing saved links' do
 
   scenario 'I can see a list of links' do
 
-    Link.create(url: 'http://www.google.co.uk', title: 'google')
+    Link.create(url: 'http://www.google.co.uk', title: 'Google')
     visit('/links')
 
     # sanity check
