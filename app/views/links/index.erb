@@ -4,12 +4,12 @@
   <input type="submit" value="New bookmark">
 </form>
 
-<ul> id='links'>
+<ul id='links'>
   <% @links.each do |link| %>
    <li>
      title: <%= link.title %>
      url: <%= link.url %>
-     tag: <%= link.tag %>
+     tags: <%= link.tags %>
    </li>
  <% end %>
 </ul>
