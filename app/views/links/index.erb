@@ -9,7 +9,10 @@
    <li>
      title: <%= link.title %>
      url: <%= link.url %>
-     tags: <%= link.tags %>
+     tags:
+     <% link.tags.each do |tag| %>
+        <%= tag.name %>
+     <% end %>
    </li>
  <% end %>
 </ul>
