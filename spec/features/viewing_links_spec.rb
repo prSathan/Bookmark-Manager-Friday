@@ -25,4 +25,14 @@ feature 'Viewing saved links' do
     end
   end
 
+  scenario 'I can add and view multiple tags' do
+    visit('/links/new')
+    fill_in('title', with: 'Google')
+    fill_in('url', with: 'http://www.google.co.uk')
+    fill_in('tags', with: 'search mail maps news weather')
+    click_button('Submit')
+    link = Link.last
+    expect(link.tags.map(&:name)).to include('search', 'mail', 'maps', 'news', 'weather')
+  end
+
 end
